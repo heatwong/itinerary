@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
-import { dateToString, startWeek } from './Utils.js';
+import {startWeek} from './Utils.js';
 import {Day, Blank} from './Day.js';
 
 export default class Calendar extends React.Component {
