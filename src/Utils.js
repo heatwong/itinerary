@@ -5,7 +5,7 @@ export function dateToString(date) {
 }
 
 export function startWeek(date) {
-  return date.day() == 0
+  return date.day() === 0
     ? date
     : startWeek(moment(date).subtract(1, 'days'));
 }
