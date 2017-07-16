@@ -5,12 +5,13 @@ body {
 }
 
 .dateselect {
-   text-align: center;
+   text-align: left;
+   padding-left: 10%;
 }
 
 .dayblock {
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
     cursor: pointer;
     margin: 10px;
     border-radius: 4px;
@@ -25,8 +26,8 @@ body {
 }
 
 .blankblock {
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
     margin: 10px;
 }
 

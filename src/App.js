@@ -5,6 +5,22 @@ import moment from 'moment';
 import DateRange from './DateRange.js';
 import Calendar from './Calendar.js';
 
+var calStyle = {
+  display: 'inline-block',
+  width: '70%',
+};
+
+var toolsStyle = {
+  display: 'inline-block',
+  width: '30%',
+};
+
+var titleStyle = {
+  'font-family': 'Arial',
+  'text-align': 'center',
+  'font-size': '20px',
+};
+
 export default class Itinerary extends React.Component {
   constructor(props) {
     super(props);
@@ -32,8 +48,10 @@ export default class Itinerary extends React.Component {
   render() {
     return (
       <div>
-      <div className="padding">
-      </div>
+        <div className="padding">
+        <p style={titleStyle}>Title</p>
+        </div>
+        <span style={calStyle}>
         <DateRange
           startDate={this.state.startDate}
           endDate={this.state.endDate}
@@ -44,6 +62,9 @@ export default class Itinerary extends React.Component {
           startDate={this.state.startDate}
           endDate={this.state.endDate}
         />
+        </span>
+        <span style={toolsStyle}>
+        </span>
       </div>
     );    
   }
