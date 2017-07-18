@@ -4,15 +4,17 @@ import './App.css';
 import moment from 'moment';
 import DateRange from './DateRange.js';
 import Calendar from './Calendar.js';
+import Tools from './Tools.js';
 
 var calStyle = {
-  display: 'inline-block',
-  width: '70%',
+  float: 'left',
+  width: '60%',
 };
 
 var toolsStyle = {
   display: 'inline-block',
-  width: '30%',
+  width: '40%',
+  'text-align': 'left',
 };
 
 var titleStyle = {
@@ -49,22 +51,23 @@ export default class Itinerary extends React.Component {
     return (
       <div>
         <div className="padding">
-        <p style={titleStyle}>Title</p>
-        </div>
-        <span style={calStyle}>
-        <DateRange
-          startDate={this.state.startDate}
-          endDate={this.state.endDate}
-          onChangeStart={this.handleChangeStart}
-          onChangeEnd={this.handleChangeEnd}
-        />
-        <Calendar
-          startDate={this.state.startDate}
-          endDate={this.state.endDate}
-        />
-        </span>
-        <span style={toolsStyle}>
-        </span>
+          <p style={titleStyle}>TripLite</p>
+          </div>
+          <span style={calStyle}>
+            <DateRange
+              startDate={this.state.startDate}
+              endDate={this.state.endDate}
+              onChangeStart={this.handleChangeStart}
+              onChangeEnd={this.handleChangeEnd}
+            />
+            <Calendar
+              startDate={this.state.startDate}
+              endDate={this.state.endDate}
+            />
+          </span>
+          <span style={toolsStyle}>
+            <Tools />
+          </span>
       </div>
     );    
   }
