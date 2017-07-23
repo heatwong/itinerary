@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../stylesheets/App.css';
 import moment from 'moment';
 import DateRange from './DateRange.js';
 import Calendar from './Calendar.js';
