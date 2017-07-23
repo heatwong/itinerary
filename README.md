@@ -4,4 +4,5 @@ I hate recreating the same excel spreadsheet everytime I take a vacation. This i
 ```npm init
 npm install --save-dev
 sbt run
-http://localhost:9000```
+http://localhost:9000
+```
