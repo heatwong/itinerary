@@ -19,3 +19,20 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# sbt
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+
+# webpack
+app/assets/javascripts/build
+
+# play
+/project/project
+/project/target
