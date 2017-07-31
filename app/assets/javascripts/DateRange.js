@@ -22,6 +22,7 @@ export default class DateRange extends React.Component {
     const start = this.props.startDate;
     const end   = this.props.endDate;
 
+    var tohighlight = [ start ];
     return (
       <div className="dateselect">
         <span className="padding">
@@ -31,7 +32,6 @@ export default class DateRange extends React.Component {
             startDate={start}
             endDate={end}
             onChange={this.handleChangeStart}
-            monthsShown={2}
             placeholderText="Start Date"
           />
         </span>
@@ -39,11 +39,11 @@ export default class DateRange extends React.Component {
         <span className="padding">
           <DatePicker
             selected={end}
+            highlightDates={tohighlight}
             selectsEnd
             startDate={start}
             endDate={end}
             onChange={this.handleChangeEnd}
-            monthsShown={2}
             placeholderText="End Date"
           />
         </span>
